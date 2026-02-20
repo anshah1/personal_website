@@ -2,7 +2,7 @@ type Project = {
     title: string;
     description: string;
     technologies: string[];
-    url?: string;   // ? means optional
+    url?: string;
 };
 
 function ProjectCard(p: Project) {
