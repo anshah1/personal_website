@@ -19,12 +19,12 @@ const experiences = [
         role: 'Software Engineering Intern',
         description: 'Built an automated semiconductor wafer testing pipeline'
     },
-    {
-        company: 'Private Tutor',
-        time: '2023-2025',
-        role: 'Self-Employed',
-        description: 'Personalized tutoring for all ages.'
-    }
+    //{
+    //    company: 'Private Tutor',
+    //    time: '2023-2025',
+    //    role: 'Self-Employed',
+    //    description: 'Personalized tutoring for all ages.'
+    //}
 ]
 
 function Experiences() {
