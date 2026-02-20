@@ -29,16 +29,19 @@ const experiences = [
 
 function Experiences() {
     return (
-        <div>
-            <h2>Experiences</h2>
-            <div>
+        <section className="container py-5">
+            <h2 className="mb-4 text-light">Experiences</h2>
+            <div className="row g-4">
                 {experiences.map((experience) => (
-                    <div key={experience.company}>
+                    <div
+                        className="col-md-6 col-lg-4"
+                        key={experience.company}
+                    >
                         <ExperienceCard {...experience} />
                     </div>
                 ))}
             </div>
-        </div>
+        </section>
     );
 }
 

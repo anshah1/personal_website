@@ -7,7 +7,7 @@ type Project = {
 
 function ProjectCard(p: Project) {
     return (
-        <div className="card p-4">
+        <div className="card bg-dark text-light shadow-lg border-0 rounded-4 p-4 h-100">
             <h5>{p.title}</h5>
             <p>{p.description}</p>
 
@@ -20,8 +20,13 @@ function ProjectCard(p: Project) {
             </div>
 
             {p.url && (
-                <a href={p.url} target="_blank">
-                    View Project
+                <a
+                    href={p.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline-light mt-3"
+                >
+                    View Project →
                 </a>
             )}
         </div>

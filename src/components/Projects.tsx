@@ -23,16 +23,17 @@ const projects = [
 
 function Projects() {
     return (
-        <div>
-            <h2>Projects</h2>
-            <div>
+        <section className="container py-5">
+            <h2 className="mb-4 text-light">Projects</h2>
+
+            <div className="row g-4">
                 {projects.map((project) => (
-                    <div key={project.title}>
+                    <div className="col-md-6 col-lg-4" key={project.title}>
                         <ProjectCard {...project} />
                     </div>
                 ))}
             </div>
-        </div>
+        </section>
     );
 }
 
