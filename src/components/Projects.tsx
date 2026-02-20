@@ -1,4 +1,4 @@
-import ProjectCard from 'ProjectCard';
+import ProjectCard from './ProjectCard';
 
 const projects = [
     {
@@ -26,14 +26,14 @@ function Projects() {
         <div>
             <h2>Projects</h2>
             <div>
-                {projects.map(project) => (
-                <div key={project.title}>
-                    <ProjectCard {...project} />
-                </div>
-                )}
+                {projects.map((project) => (
+                    <div key={project.title}>
+                        <ProjectCard {...project} />
+                    </div>
+                ))}
             </div>
         </div>
-    )
+    );
 }
 
 export default Projects;
