@@ -29,7 +29,7 @@ const experiences = [
 
 function Experiences() {
     return (
-        <section className="container py-5">
+        <div className="container py-5" id="experience">
             <h2 className="mb-4 text-light">Experiences</h2>
             <div className="row g-4">
                 {experiences.map((experience) => (
@@ -41,7 +41,7 @@ function Experiences() {
                     </div>
                 ))}
             </div>
-        </section>
+        </div>
     );
 }
 

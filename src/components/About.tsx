@@ -2,7 +2,7 @@ import headshot from '../assets/headshot.JPG';
 
 function About() {
     return (
-        <section className="container py-5">
+        <div className="container py-5" id="about">
             <div className="row align-items-center">
 
                 {/* Headshot */}
@@ -35,7 +35,7 @@ function About() {
                     </p>
                 </div>
             </div>
-        </section>
+        </div>
     );
 }
 

@@ -23,7 +23,7 @@ const projects = [
 
 function Projects() {
     return (
-        <section className="container py-5">
+        <div className="container py-5" id="projects">
             <h2 className="mb-4 text-light">Projects</h2>
 
             <div className="row g-4">
@@ -33,7 +33,7 @@ function Projects() {
                     </div>
                 ))}
             </div>
-        </section>
+        </div>
     );
 }
 

@@ -21,7 +21,7 @@ const contacts = [
 
 function Contact() {
     return (
-        <section className="container py-5 text-center">
+        <div className="container py-5 text-center" id="contact">
             <h2 className="mb-4 text-light">Contact</h2>
 
             <div className="d-flex justify-content-center align-items-center">
@@ -29,7 +29,7 @@ function Contact() {
                     <ContactIcon key={index} {...contact} />
                 ))}
             </div>
-        </section>
+        </div>
     );
 }
 
