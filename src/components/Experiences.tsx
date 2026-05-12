@@ -5,26 +5,38 @@ const experiences = [
         company: 'DraftKings',
         time: '2026',
         role: 'Software Engineering Intern',
-        description: 'Summer 2026'
+        description: 'AI Platforms'
+    },
+    {
+        company: 'Atlas Digital Tech Consulting',
+        time: '2026-Present',
+        role: 'Software Analyst',
+        description: 'Technical solution development and integration'
     },
     {
         company: '180 Degrees Consulting',
-        time: '2025',
+        time: '2025-2026',
         role: 'Software Analyst',
-        description: 'LLM research and performance/cost modeling for a YC startup'
+        description: 'Business analysis + software implementation'
     },
     {
         company: 'Quantum Opus',
         time: '2025',
         role: 'Software Engineering Intern',
-        description: 'Built an automated semiconductor wafer testing pipeline'
+        description: 'Automated semiconductor wafer testing'
     },
-    //{
-    //    company: 'Private Tutor',
-    //    time: '2023-2025',
-    //    role: 'Self-Employed',
-    //    description: 'Personalized tutoring for all ages.'
-    //}
+    {
+        company: 'Henry Ford Health Systems',
+        time: '2024',
+        role: 'Research + Data Analyst',
+        description: 'Medical imaging analysis'
+    },
+    {
+        company: 'Private Tutor',
+        time: '2023-2025',
+        role: 'Self-Employed',
+        description: 'Personalized tutoring for all ages.'
+    }
 ]
 
 function Experiences() {
@@ -46,3 +58,5 @@ function Experiences() {
 }
 
 export default Experiences;
+
+//add smth ab contacting for resume

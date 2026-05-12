@@ -29,6 +29,10 @@ function Contact() {
                     <ContactIcon key={index} {...contact} />
                 ))}
             </div>
+
+            <p className="mt-5 mb-0" style={{ color: '#444', fontSize: '0.85rem', fontStyle: 'italic' }}>
+                "no such thing as a life that's better than yours" — j. cole
+            </p>
         </div>
     );
 }
