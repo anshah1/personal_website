@@ -21,7 +21,7 @@ const experiences: Experience[] = [
         company: 'DraftKings',
         time: 'Summer 2026',
         role: 'Software Engineering Intern',
-        description: 'AI Platforms Team \n\n\n I do not condone gambling \n Gamble at your own risk',
+        description: 'AI Platforms Team \nGamble at your own risk',
         location: 'Boston, MA',
         logo: dkLogo,
         url: 'https://www.draftkings.com/',

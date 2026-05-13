@@ -90,6 +90,18 @@ body {
     padding: 1.25rem;
 }
 
+.project-detail-link {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: #555;
+    transition: text-decoration-color 0.15s ease, color 0.15s ease;
+}
+
+.project-detail-link:hover {
+    color: #ccc;
+    text-decoration-color: #ccc;
+}
+
 .exp-external-link {
     position: absolute;
     top: 1rem;

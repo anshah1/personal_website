@@ -59,20 +59,7 @@ function ProjectModal({ p, onClose, originRect }: { p: Project; onClose: () => v
                         </div>
 
                         {p.detail && (
-                            <>
-                                <div className="mb-3">
-                                    <h6 className="text-secondary text-uppercase mb-1" style={{ fontSize: '0.65rem', letterSpacing: '0.12em' }}>Inspiration</h6>
-                                    <p className="mb-0" style={{ fontSize: '0.9rem' }}>{p.detail.inspiration}</p>
-                                </div>
-                                <div className="mb-3">
-                                    <h6 className="text-secondary text-uppercase mb-1" style={{ fontSize: '0.65rem', letterSpacing: '0.12em' }}>My Contribution</h6>
-                                    <p className="mb-0" style={{ fontSize: '0.9rem' }}>{p.detail.contribution}</p>
-                                </div>
-                                <div className="mb-4">
-                                    <h6 className="text-secondary text-uppercase mb-1" style={{ fontSize: '0.65rem', letterSpacing: '0.12em' }}>Impact</h6>
-                                    <p className="mb-0" style={{ fontSize: '0.9rem' }}>{p.detail.impact}</p>
-                                </div>
-                            </>
+                            <p className="mb-4" style={{ fontSize: '0.9rem' }} dangerouslySetInnerHTML={{ __html: p.detail }} />
                         )}
 
                         <a
@@ -82,7 +69,7 @@ function ProjectModal({ p, onClose, originRect }: { p: Project; onClose: () => v
                             className="btn btn-outline-light w-100 mt-auto"
                             onClick={!hasUrl ? onClose : undefined}
                         >
-                            {hasUrl ? 'View Project →' : 'Contact for Release →'}
+                            {hasUrl ? 'View Project →' : 'Contact for Release'}
                         </a>
                     </div>
                 </div>
@@ -127,7 +114,7 @@ function ProjectCard({ p }: { p: Project }) {
                         className="btn btn-outline-light w-100 mt-auto"
                         onClick={(e) => e.stopPropagation()}
                     >
-                        {hasUrl ? 'View Project →' : 'Contact for Release →'}
+                        {hasUrl ? 'View Project →' : 'Contact for Release'}
                     </a>
                 </div>
             </div>
