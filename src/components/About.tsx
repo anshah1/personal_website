@@ -2,7 +2,7 @@ import headshot from '../assets/headshot.JPG';
 
 function About() {
     return (
-        <div className="container py-5" id="about">
+        <div className="container py-4" id="about">
             <div className="row align-items-center">
 
                 {/* Headshot */}
@@ -16,22 +16,22 @@ function About() {
 
                 <div className="col-md-8 text-light">
                     <h1 className="fw-bold mb-3">
-                        Hi, I'm Ansh, and I love problem-solving, learning, and exploring.
+                        Hi, I'm Ansh, and I love problem-solving, learning, and exploring
                     </h1>
 
                     <p className="lead">
-                        I'm a computer science engineering student with a minor in mathematics
-                        at the University of Michigan.
+                        I'm a computer science student with a minor in mathematics
+                        at the University of Michigan
                     </p>
 
                     <p>
                         I'm most interested in building innovative software, designing systems
-                        from scratch, and staying curious about the world
+                        from scratch, and staying curious
                     </p>
 
                     <p>
                         In my free time, I enjoy playing racket sports,
-                        dancing, playing the keyboard, reading, and cheering for the Pistons.
+                        dancing, playing the keyboard, reading, and cheering for the Pistons
                     </p>
                 </div>
             </div>

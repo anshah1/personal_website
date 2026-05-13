@@ -3,6 +3,127 @@ body {
     padding-top: 4rem;
 }
 
+
+/* --- Experience timeline --- */
+.exp-stage {
+    position: relative;
+    padding-bottom: 270px;
+}
+
+.exp-timeline {
+    position: relative;
+    height: 110px;
+}
+
+.exp-wave {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.exp-stop {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.18s ease;
+}
+
+.exp-stop:hover {
+    transform: translate(-50%, -50%) scale(1.12);
+}
+
+.exp-stop.active .exp-logo-placeholder,
+.exp-stop.active img {
+    border-color: #fff;
+    box-shadow: 0 0 0 2px #fff2;
+}
+
+.exp-logo-placeholder {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #1e1e1e;
+    border: 2px solid #333;
+    transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.exp-logo-placeholder.large {
+    width: 72px;
+    height: 72px;
+    border-radius: 14px;
+}
+
+.exp-stop img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: contain;
+    background: #fff;
+    border: 2px solid #333;
+    transition: border-color 0.18s ease;
+}
+
+/* --- Experience detail panel --- */
+.exp-detail {
+    position: absolute;
+    top: 126px;
+    width: 400px;
+    transform: translateX(-50%);
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 1rem;
+    padding: 1.25rem;
+    transition: left 0.3s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.exp-external-link {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #555;
+    transition: color 0.15s ease;
+    line-height: 1;
+}
+
+.exp-external-link:hover {
+    color: #ccc;
+}
+
+.exp-detail-logo img {
+    width: 72px;
+    height: 72px;
+    border-radius: 14px;
+    object-fit: contain;
+    background: #fff;
+}
+
+.exp-meta {
+    display: flex;
+    gap: 3rem;
+    padding: 1rem 1.25rem;
+    background: #0f0f0f;
+    border: 1px solid #222;
+    border-radius: 0.6rem;
+}
+
+.exp-meta-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #555;
+    margin-bottom: 0.2rem;
+}
+
+.exp-meta-value {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
 .project-card-wrapper {
     position: relative;
     height: 100%;

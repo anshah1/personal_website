@@ -16,6 +16,4 @@ function ExperienceCard({ company, time, role, description }: Experience) {
     );
 }
 
-//maybe make this look different than projects, since imma make projects clickable
-
 export default ExperienceCard;

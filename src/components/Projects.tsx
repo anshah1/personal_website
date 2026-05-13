@@ -61,7 +61,7 @@ const projects: Project[] = [
 
 function Projects() {
     return (
-        <div className="container py-5" id="projects">
+        <div className="container py-4" id="projects">
             <h2 className="mb-4 text-light">Projects</h2>
 
             <div className="row g-4 position-relative">
