@@ -118,7 +118,7 @@ function Experiences() {
                                 top: `${STOPS[i].y}%`,
                             }}
                             onClick={() => setSelected(i)}
-                            title={e.company}
+                            aria-label={e.company}
                         >
                             {e.logo
                                 ? <img src={e.logo} alt={e.company} />

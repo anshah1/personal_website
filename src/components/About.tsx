@@ -17,6 +17,7 @@ function About() {
                 <div className="col-md-4 mb-4 mb-md-0 d-flex align-items-center">
                     <img
                         src={headshot}
+                        alt="Ansh Shah"
                         className="shadow-lg w-100"
                         style={{ maxWidth: "340px", aspectRatio: "1", objectFit: "cover", borderRadius: "50%" }}
                     />

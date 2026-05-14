@@ -79,7 +79,7 @@ function ProjectModal({ p, onClose, originRect }: { p: Project; onClose: () => v
                     <div ref={backRef} className="project-modal-face project-modal-back card bg-dark text-light border-0 rounded-4 p-4">
                         <div className="d-flex justify-content-between align-items-start mb-3">
                             <h5 className="mb-0">{p.title}</h5>
-                            <button className="btn btn-sm btn-outline-secondary ms-3" onClick={onClose}>✕</button>
+                            <button className="btn btn-sm btn-outline-secondary ms-3" onClick={onClose} aria-label="Close">✕</button>
                         </div>
 
                         {p.detail && (
