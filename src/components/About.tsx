@@ -25,7 +25,7 @@ function About() {
 
                 <div className="col-md-8 text-light d-flex flex-column justify-content-between">
                     <p style={{ fontSize: '1.4rem' }}>
-                        I'm a computer science and mathematics student at Michigan driven by curiosity. I love understanding how things work at a deep level, which is why I'm especially drawn to building systems from scratch and tackling hard problems in the fields of low-latency systems and AI.
+                        I'm a computer science student at the University of Michigan 〽️ driven by curiosity. I love understanding how things work at a deep level, which is why I'm especially drawn to building systems from scratch and tackling hard problems in the fields of low-latency systems and AI.
                     </p>
                     <p style={{ fontSize: '1.4rem' }}>
                         Outside of software, I care deeply about giving back to the communities that shaped me through teaching and volunteering.
