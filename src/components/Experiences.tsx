@@ -72,8 +72,6 @@ const experiences: Experience[] = [
     },
 ];
 
-// wave: 6 stops, alternating high/low
-// SVG viewBox 0 0 1000 100 — x positions evenly spaced, y alternates 28 / 72
 const STOPS = [
     { x: 83,  y: 28 },
     { x: 250, y: 72 },
@@ -83,7 +81,6 @@ const STOPS = [
     { x: 916, y: 72 },
 ];
 
-// smooth bezier through alternating points
 const WAVE_PATH = `
     M 83,28
     C 166,28 166,72 250,72
@@ -101,7 +98,6 @@ function Experiences() {
         <div className="container py-4" id="experience">
             <h2 className="mb-5 text-light">Experience</h2>
 
-            {/* Timeline + anchored panel */}
             <div className="exp-stage">
                 <div className="exp-timeline">
                     <svg
@@ -132,7 +128,6 @@ function Experiences() {
                     ))}
                 </div>
 
-                {/* Detail panel always centered */}
                 <div className="exp-detail">
                     {exp.url && (
                         <a href={exp.url} target="_blank" rel="noopener noreferrer" className="exp-external-link">
@@ -151,11 +146,11 @@ function Experiences() {
                             }
                         </div>
                         <div className="flex-grow-1 d-flex flex-column" style={{ minWidth: 0 }}>
-                            <div className="d-flex justify-content-between align-items-baseline">
+                            <div className="d-flex justify-content-between align-items-baseline flex-wrap gap-1">
                                 <div className="text-light fw-semibold" style={{ fontSize: '1rem' }}>{exp.company}</div>
                                 <div className="exp-meta-value">{exp.time}</div>
                             </div>
-                            <div className="d-flex justify-content-between align-items-baseline">
+                            <div className="d-flex justify-content-between align-items-baseline flex-wrap gap-1">
                                 <div className="text-secondary" style={{ fontSize: '0.82rem' }}>{exp.role}</div>
                                 <div className="exp-meta-value" style={{ fontSize: '0.82rem' }}>{exp.location}</div>
                             </div>

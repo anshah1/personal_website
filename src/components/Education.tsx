@@ -1,3 +1,5 @@
+import umichLogo from '../assets/umich.png';
+
 type Course = {
     code: string;
     name: string;
@@ -49,7 +51,7 @@ function Education() {
 
             <div className="education-header mb-5">
                 <img
-                    src="/src/assets/umich.png"
+                    src={umichLogo}
                     alt="University of Michigan"
                     className="umich-logo"
                 />
