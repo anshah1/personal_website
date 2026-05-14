@@ -30,7 +30,7 @@ const courses: Course[] = [
     {
         code: 'EECS 203',
         name: 'Discrete Math',
-        thoughts: 'Sat in office hours every Tuesday frustrated but had the most rewarding epiphanies of my life.',
+        thoughts: 'Sat in office hours every Tuesday confused but had the most rewarding epiphanies of my life.',
     },
     {
         code: 'PHIL 340',

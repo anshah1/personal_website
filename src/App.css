@@ -2,6 +2,38 @@ body {
     background-color: #0f0f0f;
     padding-top: 4rem;
     font-size: 1.05rem;
+    color: #d4d4d4;
+    line-height: 1.55;
+    letter-spacing: 0.01em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* --- About --- */
+.about-name-highlight {
+    position: relative;
+    display: inline-block;
+}
+
+.about-name-underline {
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 10px;
+    overflow: visible;
+}
+
+.about-name-underline path {
+    stroke-dasharray: 120;
+    stroke-dashoffset: 120;
+    animation: draw-line 2s ease infinite;
+}
+
+@keyframes draw-line {
+    0%   { stroke-dashoffset: 120; }
+    40%  { stroke-dashoffset: 0; }
+    70%  { stroke-dashoffset: 0; }
+    100% { stroke-dashoffset: 120; }
 }
 
 /* --- Education --- */

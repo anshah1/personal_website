@@ -30,7 +30,7 @@ const experiences: Experience[] = [
         company: 'Clear Estimates',
         time: 'Winter 2026',
         role: 'Software Developer',
-        description: 'At Atlas Digital, my tech consulting club, my team built a recommendation system for Clear Estimates, a construction estimating platform, to flag potentially missing line items before contractors finalize orders. This involved studying different model architectures, extensive hyperparameter tuning, and iterative testing before landing on a two-phase PyTorch approach combining an autoencoder for slot classification with collaborative filtering, correctly surfacing 2 out of 3 masked missing parts from its top 10 recommendations.',
+        description: "Through Atlas Digital, Michigan's premier tech consulting club, our team built a recommendation system for Clear Estimates, a construction estimating platform, to flag potentially missing line items before contractors finalize orders. This involved studying different model architectures, extensive hyperparameter tuning, and iterative testing before landing on a two-phase PyTorch approach combining an autoencoder for category classification with collaborative filtering for the specific part, correctly surfacing 2 out of 3 masked missing parts from its top 10 recommendations.",
         location: 'Ann Arbor, MI',
         logo: ceLogo,
         url: 'https://www.clearestimates.com/',
@@ -63,7 +63,7 @@ const experiences: Experience[] = [
         url: 'https://www.hfhs-bjc.org/',
     },
     {
-        company: 'Private Tutor',
+        company: 'Tutor',
         time: 'Fall 2023 – Present',
         role: 'Self-Employed',
         description: "Teaching is one of my biggest passions, so what better side job than tutoring? I've worked with seven students across grades 4 through 12 in math, reading, writing, physics, and computer science, tailoring my lesson plans approach to each student's learning style and pace. Beyond academics, I've done college counseling work focused on essay development and extracurricular positioning. Contact me with any opportunities or inquiries!",
