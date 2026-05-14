@@ -1,6 +1,32 @@
 import { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
-import type { Project } from './Projects';
+import type { Project, ProjectLink } from './Projects';
+
+function LinkButtons({ links, onContactClick }: { links?: ProjectLink[]; onContactClick?: () => void }) {
+    if (!links || links.length === 0) {
+        return (
+            <a href="#contact" className="btn btn-outline-light w-100 mt-auto" onClick={onContactClick}>
+                Contact for Release
+            </a>
+        );
+    }
+    return (
+        <div className="d-flex gap-2 mt-auto">
+            {links.map(link => (
+                <a
+                    key={link.label}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline-light flex-fill"
+                    onClick={e => e.stopPropagation()}
+                >
+                    {link.label}
+                </a>
+            ))}
+        </div>
+    );
+}
 
 type Rect = { x: number; y: number; width: number; height: number };
 
@@ -24,8 +50,6 @@ function ProjectModal({ p, onClose, originRect }: { p: Project; onClose: () => v
         }
         requestAnimationFrame(() => requestAnimationFrame(() => setReady(true)));
     }, []);
-
-    const hasUrl = p.url && p.url.length > 0;
 
     return createPortal(
         <div
@@ -62,15 +86,7 @@ function ProjectModal({ p, onClose, originRect }: { p: Project; onClose: () => v
                             <p className="mb-4" style={{ fontSize: '0.9rem' }} dangerouslySetInnerHTML={{ __html: p.detail }} />
                         )}
 
-                        <a
-                            href={hasUrl ? p.url! : '#contact'}
-                            target={hasUrl ? '_blank' : '_self'}
-                            rel="noopener noreferrer"
-                            className="btn btn-outline-light w-100 mt-auto"
-                            onClick={!hasUrl ? onClose : undefined}
-                        >
-                            {hasUrl ? 'View Project →' : 'Contact for Release'}
-                        </a>
+                        <LinkButtons links={p.links} onContactClick={onClose} />
                     </div>
                 </div>
             </div>
@@ -82,7 +98,6 @@ function ProjectModal({ p, onClose, originRect }: { p: Project; onClose: () => v
 function ProjectCard({ p }: { p: Project }) {
     const [originRect, setOriginRect] = useState<Rect | null>(null);
     const cardRef = useRef<HTMLDivElement>(null);
-    const hasUrl = p.url && p.url.length > 0;
 
     function handleClick() {
         if (!p.detail || !cardRef.current) return;
@@ -107,15 +122,7 @@ function ProjectCard({ p }: { p: Project }) {
                         ))}
                     </div>
 
-                    <a
-                        href={hasUrl ? p.url! : '#contact'}
-                        target={hasUrl ? '_blank' : '_self'}
-                        rel="noopener noreferrer"
-                        className="btn btn-outline-light w-100 mt-auto"
-                        onClick={(e) => e.stopPropagation()}
-                    >
-                        {hasUrl ? 'View Project →' : 'Contact for Release'}
-                    </a>
+                    <LinkButtons links={p.links} />
                 </div>
             </div>
 

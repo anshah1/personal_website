@@ -4,34 +4,30 @@ function About() {
     return (
         <div className="container py-4" id="about">
             <div className="row align-items-center">
-
-                {/* Headshot */}
-                <div className="col-md-4 text-center mb-4 mb-md-0">
+                <div className="col-md-4 mb-4 mb-md-0">
                     <img
                         src={headshot}
-                        className="img-fluid rounded-4 shadow-lg"
-                        style={{ maxWidth: "400px" }}
+                        className="shadow-lg"
+                        style={{ width: "100%", maxWidth: "340px", aspectRatio: "1", objectFit: "cover", borderRadius: "50%" }}
                     />
                 </div>
 
-                <div className="col-md-8 text-light">
-                    <h1 className="fw-bold mb-3">
-                        Hi, I'm Ansh, and I love problem-solving, learning, and exploring
-                    </h1>
-
-                    <p className="lead">
-                        I'm a computer science student with a minor in mathematics
-                        at the University of Michigan
+                <div className="col-md-8 text-light d-flex flex-column justify-content-between" style={{ minHeight: "340px" }}>
+                    <div>
+                        <h2 className="fw-bold mb-1">Ansh Shah</h2>
+                        <p className="text-secondary mb-4">Computer Science @ University of Michigan</p>
+                    </div>
+                    <p style={{ fontSize: '1.05rem' }}>
+                        I love building innovative software, designing systems from scratch, solving hard problems, and staying curious.
                     </p>
-
-                    <p>
-                        I'm most interested in building innovative software, designing systems
-                        from scratch, and staying curious
+                    <p style={{ fontSize: '1.05rem' }}>
+                        In my free time, I play racket sports, dance, play the keyboard, and cheer for the Pistons 🏀.
                     </p>
-
-                    <p>
-                        In my free time, I enjoy playing racket sports,
-                        dancing, playing the keyboard, reading, and cheering for the Pistons
+                    <p className="mb-0" style={{ fontSize: '1.05rem' }}>
+                        Check out what I've been{' '}
+                        <a href="https://www.goodreads.com/user/show/89175918-ansh" target="_blank" rel="noopener noreferrer" className="project-detail-link">reading</a>
+                        {' '}and{' '}
+                        <a href="https://stats.fm/anshshah" target="_blank" rel="noopener noreferrer" className="project-detail-link">listening to</a>.
                     </p>
                 </div>
             </div>

@@ -1,6 +1,27 @@
 body {
     background-color: #0f0f0f;
     padding-top: 4rem;
+    font-size: 1.05rem;
+}
+
+/* --- Education --- */
+.education-header {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.umich-logo {
+    height: 56px;
+    width: auto;
+    object-fit: contain;
+}
+
+.course-code {
+    font-size: 0.7rem;
+    color: #888;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 
@@ -91,15 +112,16 @@ body {
 }
 
 .project-detail-link {
-    color: inherit;
+    color: #ccc;
     text-decoration: underline;
     text-decoration-color: #555;
-    transition: text-decoration-color 0.15s ease, color 0.15s ease;
+    text-underline-offset: 3px;
+    transition: color 0.15s ease, text-decoration-color 0.15s ease;
 }
 
 .project-detail-link:hover {
-    color: #ccc;
-    text-decoration-color: #ccc;
+    color: #fff;
+    text-decoration-color: #aaa;
 }
 
 .exp-external-link {
