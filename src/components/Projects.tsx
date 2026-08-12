@@ -16,14 +16,14 @@ export type Project = {
 const projects: Project[] = [
     {
         title: 'Hoopheads',
-        description: 'NBA player guessing game with 15k+ users and 300k YouTube views',
+        description: 'NBA player guessing game with 18k+ users and 450k YouTube views',
         technologies: ["Flask", "Bootstrap", "JavaScript", "Supabase", "REST APIs", "Beautiful Soup"],
         links: [
             { label: 'View Site', url: 'https://hoopheads.vercel.app/' },
             { label: 'GitHub', url: 'https://github.com/anshah1/Hoopheads' },
             { label: 'See it played!', url: 'https://www.youtube.com/watch?v=Rt_Bh02eD40' }
         ],
-        detail: "As my first web development experience, I wanted to build something I actually saw a use case for. As a huge NBA fan and daily player of online games, I noticed there were plenty of NBA guessing games out there, but none that let you guess players purely from their stats. <br><br>To build Hoopheads, I taught myself Flask, worked with REST APIs and web scraping to pull player data, and built a stats tracking dashboard with Google OAuth and Supabase for registered users. <br><br>After online marketing and cold emailing basketball creators, it got featured by KOT4Q, my favorite NBA YouTuber growing up, in <a href=\"https://www.youtube.com/watch?v=Rt_Bh02eD40\" target=\"_blank\" class=\"project-detail-link\">a video</a> that crossed 300k views. The game has since reached 15k unique players across 100 countries with 600 registered users."
+        detail: "As my first web development experience, I wanted to build something I actually saw a use case for. As a huge NBA fan and daily player of online games, I noticed there were plenty of NBA guessing games out there, but none that let you guess players purely from their stats. <br><br>To build Hoopheads, I taught myself Flask, worked with REST APIs and web scraping to pull player data, and built a stats tracking dashboard with Google OAuth and Supabase for registered users. <br><br>After online marketing and cold emailing basketball creators, it got featured by KOT4Q, my favorite NBA YouTuber growing up, in <a href=\"https://www.youtube.com/watch?v=Rt_Bh02eD40\" target=\"_blank\" class=\"project-detail-link\">a video</a> that crossed 300k views and <a href=\"https://www.youtube.com/watch?v=Rt_Bh02eD40\" target=\"_blank\" class=\"project-detail-link\">another</a> with over 150k views. The game has reached 18k unique players across 100 countries with 700 registered users."
     },
     /*
     {
@@ -51,6 +51,16 @@ const projects: Project[] = [
             { label: 'GitHub', url: 'https://github.com/anshah1/Recap' },
         ],
         detail: "When I realized that everything you do on your computer is just executing lines of code in a user-friendly way, I had an epiphany. What if you could bypass the iMessage UI entirely and send messages straight from the terminal? My friends made fun of me for building something with no real use case instead of studying for a midterm, so I adapted it into something more practical: a bot that automatically summarizes long conversations. <br><br>I started by tapping directly into iMessage's local database to read conversations, then built trigger detection so the bot knows when to fire. From there I wired in Gemini API to generate the summaries, engineered automatic model rotation to handle rate limits, and deployed the whole thing as a macOS LaunchAgent so it starts and stops silently with the system. <br><br>It's been running on my laptop ever since, and my friends and I use it regularly in group chats, occasionally for its intended use case, but primarily for humorous purposes, to see how an LLM interprets conversations full of inside jokes and slang."
+    },
+    {
+        title: 'TraceShot',
+        description: 'Embed and retrieve the source URL of a screenshot',
+        technologies: ["Typescript", "React", "Vite", "Chrome Extension", "Next.js", "Supabase"],
+        links: [
+            { label: 'Chrome Web Store', url: 'https://chromewebstore.google.com/detail/traceshot/ngajpkdoilllnldleehlpoldaneobgbi' },
+            { label: 'GitHub', url: 'https://github.com/anshah1/TraceShot' },
+        ],
+        detail: "Inspired by <a href=\"https://www.datadoghq.com/blog/engineering/steganography-at-scale/\" target=\"_blank\" class=\"project-detail-link\">this Datadog engineering blog</a> on steganography at scale, I wanted to build a similar system for any screenshot. Screenshots of articles, logs, and dashboards get shared around Slack, messages, email, and Discord, losing the link they originally came from. Recovering that link requires going back to whoever sent it, which may take time. With TraceShot, an ID is embedded into the image the moment the screenshot is taken, and decoded when it's reuploaded to retrieve the URL, so the picture itself is never stored. <br><br>I started by designing a schema for the IDs so they could be cleanly encoded as bits. From there I tried different approaches: encoding the ID into the original background, adding a border, and various ways of packing the bits into RGB. I settled on one after extensive testing, taking screenshots across devices with different DPRs and configurations and sharing them through different lossless formats to see what survived. <br><br>Then I hooked it up to a Next.js and Supabase backend to map IDs to URLs and shipped it to the Chrome Web Store."
     },
     {
         title: 'Dill.study',
